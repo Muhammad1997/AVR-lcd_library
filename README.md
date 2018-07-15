@@ -38,62 +38,61 @@ made by / Muhammad Magdy with help of "http://www.electronicwings.com"
 
 ## function of imbortant functions 
 
-### Lcd_Init(); >>>>> Initializes Lcd module in 8-bit mode.
-* ex  
+### Lcd_Init(); >>>>> Initializes Lcd module in 8-bit mode. 
 ```c
 Lcd_Init();
 ```
------------------------------------
 
 ### Lcd_Out();  >>>>> Prints text on Lcd starting from specified position.
-* ex 
 ```c
 Lcd_Out(0,0,"hi"); //print ho on row 0 col 0.
 ```
------------------------------------
 
-### Lcd_Clear(); >>>>> clear display.
-* ex            
+### Lcd_Clear(); >>>>> clear display.            
 ```c
 Lcd_Clear();
 ```
------------------------------------
+
 
 ### Lcd_Command(); >>>>> Sends command to Lcd.
-* ex
 ```c
 Lcd_Command("_LCD_CLEAR ");  //Clear display
 ```
 ```c
 Lcd_Command("_LCD_RETURN_HOME "); //Return cursor to home position, returns a shifted display to its original position.
 ```
-* Lcd_Command("_LCD_CURSOR_OFF"); //Turn off cursor
-
-* Lcd_Command("_LCD_BLINK_CURSOR_ON"); //Blink cursor on
-
-* Lcd_Command("_LCD_MOVE_CURSOR_LEFT"); //Move cursor left without changing display data RAM
-
-* Lcd_Command("_LCD_MOVE_CURSOR_RIGHT"); //Move cursor right without changing display data RAM
-
-* Lcd_Command("_LCD_TURN_ON");//Turn Lcd display on
-
-* Lcd_Command("_LCD_TURN_OFF");//Turn Lcd display off
-
-* Lcd_Command("_LCD_SHIFT_LEFT");//Shift display left without changing display data RAM
-
-* Lcd_Command("_LCD_SHIFT_RIGHT");//Shift display right without changing display data RAM
-----------------------------------
+```c
+Lcd_Command("_LCD_CURSOR_OFF"); //Turn off cursor
+```
+```c
+Lcd_Command("_LCD_BLINK_CURSOR_ON"); //Blink cursor on
+```
+```c
+Lcd_Command("_LCD_MOVE_CURSOR_LEFT"); //Move cursor left without changing display data RAM
+```
+```c
+Lcd_Command("_LCD_MOVE_CURSOR_RIGHT"); //Move cursor right without changing display data RAM
+```
+```c
+Lcd_Command("_LCD_TURN_ON");//Turn Lcd display on
+```
+```c
+Lcd_Command("_LCD_TURN_OFF");//Turn Lcd display off
+```
+```c
+Lcd_Command("_LCD_SHIFT_LEFT");//Shift display left without changing display data RAM
+```
+```c
+Lcd_Command("_LCD_SHIFT_RIGHT");//Shift display right without changing display data RAM
+```
 
 ### Lcd_Custom_Char();   >>>>>  sends Custom Char to memory
-* ex
 ```c
 unsigned char Character10[8] = { 0x17,0x15,0x15,0x15,0x15,0x15,0x17,0x00 };
 Lcd_Custom_Char(0, Character10);  // Build Character at position 0 in memory.
 ```
-----------------------------------
 
 ### Lcd_Custom_Out();    >>>>>  print Custom Char at wanted position
-* ex
 ```c
 unsigned char Character10[8] = { 0x17,0x15,0x15,0x15,0x15,0x15,0x17,0x00 };
 Lcd_Custom_Char(0, Character10);  
