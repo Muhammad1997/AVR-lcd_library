@@ -38,23 +38,23 @@ made by / Muhammad Magdy with help of "http://www.electronicwings.com"
 
 ## function of imbortant functions 
 
-### Lcd_Init(); >>>>> Initializes Lcd module in 8-bit mode. 
+### Lcd_Init(); // Initializes Lcd module in 8-bit mode. 
 ```c
 Lcd_Init();
 ```
 
-### Lcd_Out();  >>>>> Prints text on Lcd starting from specified position.
+### Lcd_Out(); // Prints text on Lcd starting from specified position.
 ```c
 Lcd_Out(0,0,"hi"); //print ho on row 0 col 0.
 ```
 
-### Lcd_Clear(); >>>>> clear display.            
+### Lcd_Clear(); // clear display.            
 ```c
 Lcd_Clear();
 ```
 
 
-### Lcd_Command(); >>>>> Sends command to Lcd.
+### Lcd_Command(); // Sends command to Lcd.
 ```c
 Lcd_Command("_LCD_CLEAR ");  //Clear display
 ```
@@ -86,13 +86,13 @@ Lcd_Command("_LCD_SHIFT_LEFT");//Shift display left without changing display dat
 Lcd_Command("_LCD_SHIFT_RIGHT");//Shift display right without changing display data RAM
 ```
 
-### Lcd_Custom_Char();   >>>>>  sends Custom Char to memory
+### Lcd_Custom_Char(); //  sends Custom Char to memory
 ```c
 unsigned char Character10[8] = { 0x17,0x15,0x15,0x15,0x15,0x15,0x17,0x00 };
 Lcd_Custom_Char(0, Character10);  // Build Character at position 0 in memory.
 ```
 
-### Lcd_Custom_Out();    >>>>>  print Custom Char at wanted position
+### Lcd_Custom_Out(); //  print Custom Char at wanted position
 ```c
 unsigned char Character10[8] = { 0x17,0x15,0x15,0x15,0x15,0x15,0x17,0x00 };
 Lcd_Custom_Char(0, Character10);  
