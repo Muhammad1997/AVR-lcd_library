@@ -1,44 +1,43 @@
-AVR LCD LIBrary 
-
+#AVR LCD LIBrary 
 made by / Muhammad Magdy with help of "http://www.electronicwings.com"
 
 
-first add library files into project 
+##first add library files into project 
 *add>>existing item
 *choose my_lcd.c and my_lcd.h
 *include "my_lcd.h" into your main c file 
 enjoy
 ----------------------------------------------------
-electrical wiring
+##electrical wiring
 
-D0 -- B0 
-D1 -- B1
-D2 -- B2
-D3 -- B3
-D4 -- B4
-D5 -- B5
-D6 -- B6
-D7 -- B7
+*D0 -- B0 
+*D1 -- B1
+*D2 -- B2
+*D3 -- B3
+*D4 -- B4
+*D5 -- B5
+*D6 -- B6
+*D7 -- B7
 
-RS -- C0
-RW -- C1
-E  -- C2
-
-----------------------------------------------------
-main functions
-
-Lcd_Cmd();
-Lcd_Command();
-Lcd_Init();
-Lcd_Chr();
-Lcd_Out_Cp();
-Lcd_Out();
-Lcd_Clear();
-Lcd_Custom_Char();
-Lcd_Custom_Out();
+*RS -- C0
+*RW -- C1
+*E  -- C2
 
 ----------------------------------------------------
-function of imbortant functions 
+##main functions
+
+*Lcd_Cmd();
+*Lcd_Command();
+*Lcd_Init();
+*Lcd_Chr();
+*Lcd_Out_Cp();
+*Lcd_Out();
+*Lcd_Clear();
+*Lcd_Custom_Char();
+*Lcd_Custom_Out();
+
+----------------------------------------------------
+##function of imbortant functions 
 
 *Lcd_Init(); >>>>> Initializes Lcd module in 8-bit mode.
 ex           >>>>> Lcd_Init();
