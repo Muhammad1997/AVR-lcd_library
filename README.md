@@ -7,7 +7,7 @@ made by / Muhammad Magdy with help of "http://www.electronicwings.com"
 * choose my_lcd.c and my_lcd.h
 * include "my_lcd.h" into your main c file 
 * enjoy
-----------------------------------------------------
+
 ## electrical wiring
 
 * D0 -- B0 
@@ -23,35 +23,34 @@ made by / Muhammad Magdy with help of "http://www.electronicwings.com"
 * RW -- C1
 * E  -- C2
 
-----------------------------------------------------
-##main functions
 
-*Lcd_Cmd();
-*Lcd_Command();
-*Lcd_Init();
-*Lcd_Chr();
-*Lcd_Out_Cp();
-*Lcd_Out();
-*Lcd_Clear();
-*Lcd_Custom_Char();
-*Lcd_Custom_Out();
+## main functions
 
-----------------------------------------------------
-##function of imbortant functions 
+* Lcd_Cmd();
+* Lcd_Command();
+* Lcd_Init();
+* Lcd_Chr();
+* Lcd_Out_Cp();
+* Lcd_Out();
+* Lcd_Clear();
+* Lcd_Custom_Char();
+* Lcd_Custom_Out();
 
-*Lcd_Init(); >>>>> Initializes Lcd module in 8-bit mode.
+## function of imbortant functions 
+
+* Lcd_Init(); >>>>> Initializes Lcd module in 8-bit mode.
 ex           >>>>> Lcd_Init();
 -----------------------------------
 
-*Lcd_Out();  >>>>> Prints text on Lcd starting from specified position.
+* Lcd_Out();  >>>>> Prints text on Lcd starting from specified position.
 ex           >>>>> Lcd_Out(0,0,"hi"); //print ho on row 0 col 0.
 -----------------------------------
 
-*Lcd_Clear(); >>>>> clear display.
+* Lcd_Clear(); >>>>> clear display.
 ex            >>>>> Lcd_Clear();
 -----------------------------------
 
-*Lcd_Command(); >>>>> Sends command to Lcd.
+* Lcd_Command(); >>>>> Sends command to Lcd.
 ex
 Lcd_Command("_LCD_CLEAR ");  //Clear display
 
@@ -74,13 +73,13 @@ Lcd_Command("_LCD_SHIFT_LEFT");//Shift display left without changing display dat
 Lcd_Command("_LCD_SHIFT_RIGHT");//Shift display right without changing display data RAM
 ----------------------------------
 
-*Lcd_Custom_Char();   >>>>>  sends Custom Char to memory
+* Lcd_Custom_Char();   >>>>>  sends Custom Char to memory
 ex
 unsigned char Character10[8] = { 0x17,0x15,0x15,0x15,0x15,0x15,0x17,0x00 };
 Lcd_Custom_Char(0, Character10);  // Build Character at position 0 in memory.
 ----------------------------------
 
-*Lcd_Custom_Out();    >>>>>  print Custom Char at wanted position
+* Lcd_Custom_Out();    >>>>>  print Custom Char at wanted position
 ex
 unsigned char Character10[8] = { 0x17,0x15,0x15,0x15,0x15,0x15,0x17,0x00 };
 Lcd_Custom_Char(0, Character10);  
