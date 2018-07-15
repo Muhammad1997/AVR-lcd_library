@@ -39,23 +39,34 @@ made by / Muhammad Magdy with help of "http://www.electronicwings.com"
 ## function of imbortant functions 
 
 ### Lcd_Init(); >>>>> Initializes Lcd module in 8-bit mode.
-* ex           >>>>> Lcd_Init();
+* ex  
+```c
+Lcd_Init();
+```
 -----------------------------------
 
 ### Lcd_Out();  >>>>> Prints text on Lcd starting from specified position.
-* ex           >>>>> Lcd_Out(0,0,"hi"); //print ho on row 0 col 0.
+* ex 
+```c
+Lcd_Out(0,0,"hi"); //print ho on row 0 col 0.
+```
 -----------------------------------
 
 ### Lcd_Clear(); >>>>> clear display.
-* ex            >>>>> Lcd_Clear();
+* ex            
+```c
+Lcd_Clear();
+```
 -----------------------------------
 
 ### Lcd_Command(); >>>>> Sends command to Lcd.
 * ex
-* Lcd_Command("_LCD_CLEAR ");  //Clear display
-
-* Lcd_Command("_LCD_RETURN_HOME "); //Return cursor to home position, returns a shifted display to its original position.
-
+```c
+Lcd_Command("_LCD_CLEAR ");  //Clear display
+```
+```c
+Lcd_Command("_LCD_RETURN_HOME "); //Return cursor to home position, returns a shifted display to its original position.
+```
 * Lcd_Command("_LCD_CURSOR_OFF"); //Turn off cursor
 
 * Lcd_Command("_LCD_BLINK_CURSOR_ON"); //Blink cursor on
