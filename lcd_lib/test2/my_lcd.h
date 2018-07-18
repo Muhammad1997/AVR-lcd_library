@@ -13,7 +13,7 @@
 #define LCD_Command_Port PORTC	/* Define LCD data port */
 #define RS PC0			        /* Define Register Select signal pin */
 #define RW PC1			        /* Define Read/Write signal pin */
-#define EN PC2			        /* Define Enable signal pin */
+#define EN PC6			        /* Define Enable signal pin */
 
 void Lcd_Cmd(char cmnd);
 void Lcd_Command(char *Command);

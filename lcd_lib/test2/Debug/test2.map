@@ -201,7 +201,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x46a
+.text           0x00000000      0x452
  *(.vectors)
  .vectors       0x00000000       0x54 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega32/avr5/crtatmega32.o
                 0x00000000                __vector_default
@@ -284,50 +284,50 @@ END GROUP
  .text.custom_build
                 0x00000082       0xfc my_lcd_test.o
                 0x00000082                custom_build
- .text.print    0x0000017e       0x8a my_lcd_test.o
+ .text.print    0x0000017e       0x7e my_lcd_test.o
                 0x0000017e                print
- .text.main     0x00000208       0x6a my_lcd_test.o
-                0x00000208                main
- .text.Lcd_Cmd  0x00000272       0x1a my_lcd.o
-                0x00000272                Lcd_Cmd
- .text.Lcd_Chr  0x0000028c       0x1a my_lcd.o
-                0x0000028c                Lcd_Chr
+ .text.main     0x000001fc       0x5e my_lcd_test.o
+                0x000001fc                main
+ .text.Lcd_Cmd  0x0000025a       0x1a my_lcd.o
+                0x0000025a                Lcd_Cmd
+ .text.Lcd_Chr  0x00000274       0x1a my_lcd.o
+                0x00000274                Lcd_Chr
  .text.Lcd_Out_Cp
-                0x000002a6       0x1e my_lcd.o
-                0x000002a6                Lcd_Out_Cp
+                0x0000028e       0x1e my_lcd.o
+                0x0000028e                Lcd_Out_Cp
  .text.Lcd_Init
-                0x000002c4       0x4c my_lcd.o
-                0x000002c4                Lcd_Init
- .text.Lcd_Out  0x00000310       0x38 my_lcd.o
-                0x00000310                Lcd_Out
+                0x000002ac       0x4c my_lcd.o
+                0x000002ac                Lcd_Init
+ .text.Lcd_Out  0x000002f8       0x38 my_lcd.o
+                0x000002f8                Lcd_Out
  .text.Lcd_Clear
-                0x00000348       0x34 my_lcd.o
-                0x00000348                Lcd_Clear
+                0x00000330       0x34 my_lcd.o
+                0x00000330                Lcd_Clear
  .text.Lcd_Custom_Char
-                0x0000037c       0x36 my_lcd.o
-                0x0000037c                Lcd_Custom_Char
+                0x00000364       0x36 my_lcd.o
+                0x00000364                Lcd_Custom_Char
  .text.Lcd_Custom_Out
-                0x000003b2       0x34 my_lcd.o
-                0x000003b2                Lcd_Custom_Out
+                0x0000039a       0x34 my_lcd.o
+                0x0000039a                Lcd_Custom_Out
  .text.avr-libc
-                0x000003e6       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(itoa.o)
-                0x000003e6                __itoa
-                0x000003e6                itoa
+                0x000003ce       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(itoa.o)
+                0x000003ce                __itoa
+                0x000003ce                itoa
  .text.avr-libc
-                0x000003fc       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
-                0x000003fc                __itoa_ncheck
+                0x000003e4       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(itoa_ncheck.o)
+                0x000003e4                __itoa_ncheck
  .text.avr-libc
-                0x00000412       0x34 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
-                0x00000412                __utoa_ncheck
-                0x00000414                __utoa_common
+                0x000003fa       0x34 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(utoa_ncheck.o)
+                0x000003fa                __utoa_ncheck
+                0x000003fc                __utoa_common
  .text.avr-libc
-                0x00000446       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strrev.o)
-                0x00000446                strrev
-                0x00000466                . = ALIGN (0x2)
+                0x0000042e       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strrev.o)
+                0x0000042e                strrev
+                0x0000044e                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000466        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00000466                _exit
-                0x00000466                exit
+ .fini9         0x0000044e        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x0000044e                _exit
+                0x0000044e                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -346,11 +346,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000466        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x0000044e        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000046a                _etext = .
+                0x00000452                _etext = .
 
-.data           0x00800060       0xf4 load address 0x0000046a
+.data           0x00800060       0xf4 load address 0x00000452
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -373,8 +373,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 [!provide]                PROVIDE (__bss_end, .)
-                0x0000046a                __data_load_start = LOADADDR (.data)
-                0x0000055e                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000452                __data_load_start = LOADADDR (.data)
+                0x00000546                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800154        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
@@ -479,18 +479,18 @@ END GROUP
  .debug_frame   0x00000000       0x70 my_lcd_test.o
  .debug_frame   0x00000070       0xe8 my_lcd.o
 
-.debug_str      0x00000000      0x429
+.debug_str      0x00000000      0x432
  *(.debug_str)
  .debug_str     0x00000000      0x196 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega32/avr5/crtatmega32.o
- .debug_str     0x00000196      0x231 my_lcd_test.o
-                                0x26a (size before relaxing)
- .debug_str     0x000003c7       0x62 my_lcd.o
-                                0x247 (size before relaxing)
+ .debug_str     0x00000196      0x23a my_lcd_test.o
+                                0x273 (size before relaxing)
+ .debug_str     0x000003d0       0x62 my_lcd.o
+                                0x250 (size before relaxing)
 
-.debug_loc      0x00000000      0x86d
+.debug_loc      0x00000000      0x869
  *(.debug_loc)
- .debug_loc     0x00000000      0x256 my_lcd_test.o
- .debug_loc     0x00000256      0x617 my_lcd.o
+ .debug_loc     0x00000000      0x252 my_lcd_test.o
+ .debug_loc     0x00000252      0x617 my_lcd.o
 
 .debug_macinfo
  *(.debug_macinfo)
